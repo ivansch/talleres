@@ -1,0 +1,394 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+	background-image: url(../img/background.png);
+	background-position: top right ;
+	background-size: auto;
+	background-repeat: no-repeat;
+}
+.contenedor{
+  margin-top: 10%;
+}
+header nav a{
+  color: white;
+  height: 28px;
+  width: 98px;
+  display: inline;
+	font-family: 'Montserrat';
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 28px;
+	font-weight: 200;
+  position: relative;
+
+}
+header ul{
+text-align:right;
+padding-top: 10px;
+}
+
+header li{
+  list-style-type: none;
+   display: inline;
+   padding-right: 5px;
+
+}
+
+.header_uno:hover{
+	color:  #FFFFFF;
+	font-weight: bold;
+}
+.header_dos:hover{
+	color:  #FFFFFF;
+	font-weight: bold;
+}
+.form-group{
+	width:90%;
+	margin-left: 9%;
+}
+label{
+	margin-bottom: 8px;
+	margin-top: 12px;
+	font-family:"Montserrat";
+	font-size: 15px;
+}
+.login {
+  position: absolute;
+  z-index: 0;
+  margin-left: 50%;
+  margin-top: -35%;
+  height: 321px;
+
+	border-radius: 30px;
+  border-width: 0.5px;
+  border-style: groove;
+  border-color: rgb(185, 180, 184);
+	background-color: white;
+}
+.singup{
+	background-color: white;
+  position: absolute;
+  margin-top: 10%;
+  margin-left: 3%;
+	border-style: groove;
+	width: 42%;
+	border-radius: 30px;
+	background-color: #153EA2;
+}
+.form-goup{
+  width: 100%;
+}
+.sosnuevo{
+  display: inline-block;
+  margin-top: 4%;
+  margin-left: 6%;
+	height: 37px;
+	width: 213px;
+	color: #FFFFFF;
+	font-family: "Montserrat";
+	font-size: 30px;
+	font-weight: 800;
+	letter-spacing: 1.32px;
+	line-height: 37px;
+}
+.parrwhite{
+
+	height: 19px;
+	width: 111px;
+	color: #FFFFFF;
+	font-family: "Montserrat";
+	font-size: 15px;
+	font-weight: 500;
+	letter-spacing: 0.32px;
+	line-height: 19px;
+  margin-top: 5%;
+}
+.parrblack{
+  height: 19px;
+  width: 111px;
+  color: black;
+  font-family: "Montserrat";
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.32px;
+  line-height: 19px;
+  margin-top: 5%;
+}
+.logueate{
+
+	height: 19px;
+	width: 10%;
+	color: #FFFFFF;
+	font-family: "Montserrat";
+	font-size: 15px;
+	font-weight: 800;
+	line-height: 19px;
+	text-align: center;
+  margin-left: 65%;
+  margin-top: 6%;
+	box-sizing: border-box;
+	height: 41px;
+	width: 30%;
+	border-radius: 80px;
+	background-color: #3972FC;
+  border-style: solid;
+}
+.crear_cuenta{
+
+
+  color: #FFFFFF;
+  font-family: "Montserrat";
+  font-size: 75%;
+  font-weight: 800;
+  line-height: 19px;
+  text-align: center;
+  margin-left: 65%;
+	margin-top: 3%;
+	margin-bottom: 4%;
+  box-sizing: border-box;
+  height: 41px;
+  width: 30%;
+  border-radius: 80px;
+  background-color: inherit;
+  border-style: solid;
+}
+.sectionbb{
+  display: flex;
+  flex-wrap: nowrap;
+}
+.text2{
+  display: inline-block;
+  margin-top: 7%;
+  margin-left: 4%;
+	height: 37px;
+	width: 230px;
+	color: #153EA2;
+	font-family: "Montserrat";
+	font-size: 30px;
+	font-weight: 800;
+	letter-spacing: 1.32px;
+	line-height: 37px;
+}
+input{
+  height: 30px;
+	width: 70%;
+	border-radius: 25px;
+	background-color: #FFFFFF;
+  text-align: justify;
+}
+.tenesun{
+  	height: 22px;
+  	width: 295px;
+  	color: #153EA2;
+  	font-family: "Montserrat";
+  	font-size: 18px;
+  	font-weight: bold;
+  	letter-spacing: 0.39px;
+  	margin-top: 30%;
+  	text-align: center;
+}
+.imag{
+	height: 51.55px;
+}
+.logo_texto{
+  display: inline-flex;
+  flex-wrap: wrap;
+  text-align: center;
+	margin:25%;
+	margin-left: 20vw;
+}
+footer{
+  background-color: black;
+  position: absolute;
+  bottom:  0px;
+}
+footer a{
+  color: white;
+  display: inline;
+	font-family: 'Montserrat';
+	font-size: 16px;
+	letter-spacing: 1.71px;
+	line-height: 21px;
+	font-weight: 200;
+}
+footer ul{
+text-align:center;
+padding-top: 10px;
+list-style-type: none;
+}
+
+footer li{
+  list-style-type: none;
+   display: inline;
+   padding-right: 5px;
+
+}
+@media (max-width: 1200px){
+  body{
+    background-size: 90%;
+  }
+
+.login {
+    margin-top: -45%;
+    margin-left: 10%;
+}
+
+.singup{
+  margin-bottom:50%;
+	margin-left: 10%;
+}
+footer{
+  position: inherit;
+  bottom: 0px;
+}
+.logueate{
+	margin-left: 65%;
+	margin-top: auto;
+}
+.crear_cuenta{
+	margin-left: 65%;
+}
+}
+@media (max-width: 980px){
+	.logo_texto{
+		margin-left: 24%;
+	}
+}
+
+@media (max-width: 768px){
+body{
+  background-size: 65% 65%;
+}
+.singup{
+  margin-left: 10%;
+}
+.login{
+
+	margin-left: 10%;
+}
+.logueate{
+	margin-left: 70%;
+}
+.crear_cuenta{
+	margin-left: 70%;
+}
+footer{
+
+  bottom: 0px;
+}
+.logo_texto {
+
+    bottom: 100px;
+    left: 0%;
+    margin-left: 16%;
+	}
+	.logueate{
+	    margin-top: 0%;
+		}
+	input{
+		width: 90%;
+	}
+@media (max-width: 576px){
+	input{
+	width: 90%;
+	}
+	header nav a{
+		font-size: 14px;
+	}
+	body{
+		background-size: 70% 30%;
+	}
+	.singup
+	{
+		margin-left:10%;
+	}
+	.login{
+		margin-left: 10%;
+	}
+	.logo_texto{
+		margin: 5%;
+		margin-left: 16%;
+
+	}
+	.imag{
+		margin-left: 42%;
+	}
+.crear_cuenta{
+	font-size: 65%;
+	line-height: 100%;
+	margin-left: 70%;
+}
+.logueate{
+	font-size: 58%;
+	margin-left: 70%;
+}
+}
+@media (max-width: 400px){
+	header nav a{
+		font-size: 14px;
+		margin-left:60%;
+	}
+	.logueate{
+
+    margin-left: 70%;
+	}
+	.crear_cuenta{
+		margin-left: 70%;
+	}
+	.text2{
+		width: 50%;
+	}
+	.sosnuevo{
+		width: 50%;
+	}
+	.logo_texto{
+		margin: 5%;
+		margin-left: auto;
+
+	}

@@ -1,3 +1,26 @@
+<?php
+require_once('funciones.php');
+
+	$mail = '';
+	$name = '';
+	$email = '';
+	$error = [];
+	$errores = [];
+	
+if ($_POST['reg']) {
+	$name = trim($_POST['name']);
+	$email = trim($_POST['email']);
+	$error = validarFuno($_POST['formuno']);
+	if (empty($error)) {
+		header('location: registrado.php');
+		exit;
+	}
+	elseif ($_POST ['log']) {
+		$mail = trim ($_POST['mail']);
+
+	}
+}
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -7,7 +30,6 @@
 		<link rel="stylesheet" href="css/login.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,500,700,800" rel="stylesheet">
 	</head>
 	<body>
@@ -15,43 +37,51 @@
 		<section class="">
 		  <article class="singup col-10 col-sm-10 col-md-10 col-lg-10 col-xl-6" >
 		    <p class="sosnuevo">¿Sos nuevo?</p>
-		    <form>
+		    <form method="post" enctype="multipart/form-data">
 		      <div class="form-group">
 					<label class="parrwhite">Nombre</label>
-						<input type="text" name="nombre">
+						<input type="text" name="name" value="<?=$name?>">
+						<?= isset($error['name']) ? $error['name'] : '' ; ?>
 		      </div>
 		    <div class="form-group">
 		      <label class="parrwhite">Mail</label>
-		      <input type="email" aria-describedby="emailHelp">
+					<input type="text" name="email" value="<?=$email?>">	<?= isset($error['email']) ? $error['email'] : '' ; ?>
 		    </div>
 		    <div class="form-group">
 		      <label class="parrwhite">Contraseña</label>
-		      <input type="password">
+		      <input type="password" name="pass">
+					<?= isset($error['pass']) ? $error['pass'] : '' ; ?>
 		    </div>
-				<button type="submit" class="crear_cuenta">Crear cuenta</button>
+				<div class="form-group">
+ 		      <label class="parrwhite"> Repetir Contraseña</label>
+ 		      <input type="password" name="rpass">
+					<?= isset($error['rpass']) ? $error['rpass'] : '' ; ?>
+ 		    </div>
+				<button type="submit" class="crear_cuenta" name="reg">Crear cuenta</button>
 		  </form>
 		</article>
 	</section>
 		<section class="">
 		<article class="login col-10 col-sm-10 col-md-10 col-lg-10 col-xl-6">
 		<p class="text2">Inicia sesión</p>
-		  <form>
+		  <form method="post">
 		  <div class="form-group">
 		    <label class="parrblack">Email</label>
-		    <input type="email" aria-describedby="emailHelp">
+		    <input type="text" name="mail" value="<?= $mail?>">
+
 		  </div>
 		  <div class="form-group">
 		    <label class="parrblack">Contraseña</label>
-		    <input type="password" >
+		    <input type="password" name="cont" >
 		  </div>
 		  <div>
-				<button type="submit" class="logueate">Logueate</button>
+				<button type="submit" class="logueate" name="log">Logueate</button>
 			</div>
 		</form>
 		</article>
 	</section>
 		<div class="logo_texto" >
-			<img src="image/talleres.png" alt="" class="imag">
+			<img src="img/talleres.png" alt="" class="imag">
 		  <p class="tenesun">Tenes un taller? Asociate <a href="#">aca</a></p>
 		</div>
 </div>

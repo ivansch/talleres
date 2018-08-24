@@ -68,6 +68,9 @@ header nav a{
   position: relative;
 
 }
+::placeholder{
+	color: red;
+}
 header ul{
 text-align:right;
 padding-top: 10px;
@@ -179,9 +182,10 @@ label{
 	background-color: #3972FC;
   border-style: solid;
 }
+.error{
+	color: rgb(172, 57, 57)
+}
 .crear_cuenta{
-
-
   color: #FFFFFF;
   font-family: "Montserrat";
   font-size: 75%;
@@ -235,13 +239,16 @@ input{
 }
 .imag{
 	height: 51.55px;
+	text-align: left;
+	position:relative;
+	bottom: -85px;
 }
 .logo_texto{
   display: inline-flex;
   flex-wrap: wrap;
   text-align: center;
-	margin:25%;
-	margin-left: 20vw;
+	margin:15%;
+	margin-left: 23vw;
 }
 footer{
   background-color: black;
@@ -309,28 +316,24 @@ body{
   margin-left: 10%;
 }
 .login{
-
 	margin-left: 10%;
+	height: 328px;
 }
 .logueate{
 	margin-left: 70%;
+	margin-top: -2%;
 }
 .crear_cuenta{
 	margin-left: 70%;
 }
 footer{
-
   bottom: 0px;
 }
 .logo_texto {
-
     bottom: 100px;
     left: 0%;
-    margin-left: 16%;
+    margin-left: 24%;
 	}
-	.logueate{
-	    margin-top: 0%;
-		}
 	input{
 		width: 90%;
 	}
@@ -357,12 +360,15 @@ footer{
 
 	}
 	.imag{
-		margin-left: 42%;
+		margin: 0 auto;
 	}
 .crear_cuenta{
 	font-size: 65%;
 	line-height: 100%;
 	margin-left: 70%;
+}
+p{
+	margin: 0 auto;
 }
 .logueate{
 	font-size: 58%;

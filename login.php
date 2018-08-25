@@ -4,21 +4,25 @@ require_once('funciones.php');
 	$mail = '';
 	$name = '';
 	$email = '';
-	$error = [];
-	$errores = [];
-	
-if ($_POST['reg']) {
-	$name = trim($_POST['name']);
-	$email = trim($_POST['email']);
-	$error = validarFuno($_POST['formuno']);
-	if (empty($error)) {
-		header('location: registrado.php');
+
+if ($_POST) {
+	if (isset($_POST['reg'])) {
+		$name = trim($_POST['name']);
+		$email = trim($_POST['email']);
+		$errorReg = validarReg($_POST);
+	if (empty($errorReg)) {
+		header('location: pagina1.html');
 		exit;
 	}
-	elseif ($_POST ['log']) {
+}
+	if (isset($_POST['log'])) {
 		$mail = trim ($_POST['mail']);
-
-	}
+		$errorLog = validarLog($_POST);
+		if (empty($errorLog)) {
+			header('location: pagina1.html');
+			exit;
+		}
+}
 }
 ?>
 <!DOCTYPE html>
@@ -37,25 +41,27 @@ if ($_POST['reg']) {
 		<section class="">
 		  <article class="singup col-10 col-sm-10 col-md-10 col-lg-10 col-xl-6" >
 		    <p class="sosnuevo">¿Sos nuevo?</p>
-		    <form method="post" enctype="multipart/form-data">
+		    <form method="post" action="" enctype="multipart/form-data">
 		      <div class="form-group">
 					<label class="parrwhite">Nombre</label>
-						<input type="text" name="name" value="<?=$name?>">
-						<?= isset($error['name']) ? $error['name'] : '' ; ?>
+						<input type="text" name="name" value="<?=$name?>"><p class="text-warning">
+						<?= isset($errorReg['name']) ? $errorReg['name'] : '' ; ?></p>
 		      </div>
 		    <div class="form-group">
 		      <label class="parrwhite">Mail</label>
-					<input type="text" name="email" value="<?=$email?>">	<?= isset($error['email']) ? $error['email'] : '' ; ?>
+					<input type="text" name="email" value="<?=$email?>">	 <p class="text-warning">
+					 <?= isset($errorReg['email']) ? $errorReg['email'] : '' ; ?>
+				 </p>
 		    </div>
 		    <div class="form-group">
 		      <label class="parrwhite">Contraseña</label>
-		      <input type="password" name="pass">
-					<?= isset($error['pass']) ? $error['pass'] : '' ; ?>
+		      <input type="password" name="pass"><p class="text-warning">
+					<?= isset($errorReg['pass']) ? $errorReg['pass'] : '' ; ?> </p>
 		    </div>
 				<div class="form-group">
  		      <label class="parrwhite"> Repetir Contraseña</label>
- 		      <input type="password" name="rpass">
-					<?= isset($error['rpass']) ? $error['rpass'] : '' ; ?>
+ 		      <input type="password" name="rpass"><p class="text-warning">
+					<?= isset($errorReg['rpass']) ? $errorReg['rpass'] : '' ; ?> </p>
  		    </div>
 				<button type="submit" class="crear_cuenta" name="reg">Crear cuenta</button>
 		  </form>
@@ -68,11 +74,13 @@ if ($_POST['reg']) {
 		  <div class="form-group">
 		    <label class="parrblack">Email</label>
 		    <input type="text" name="mail" value="<?= $mail?>">
-
+				<p class="text-danger">
+				<?= isset($errorLog['mail']) ? $errorLog['mail'] : '' ; ?> </p>
 		  </div>
 		  <div class="form-group">
 		    <label class="parrblack">Contraseña</label>
-		    <input type="password" name="cont" >
+		    <input type="password" name="cont" ><p class="text-danger">
+				<?= isset($errorLog['cont']) ? $errorLog['cont'] : '' ; ?> </p>
 		  </div>
 		  <div>
 				<button type="submit" class="logueate" name="log">Logueate</button>

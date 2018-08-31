@@ -11,16 +11,22 @@ if ($_POST) {
 		$email = trim($_POST['email']);
 		$errorReg = validarReg($_POST);
 	if (empty($errorReg)) {
-		header('location: pagina1.html');
-		exit;
+		$usuario = guardarUsuario($_POST);
+		loguear($usuario);
 	}
 }
 	if (isset($_POST['log'])) {
 		$mail = trim ($_POST['mail']);
 		$errorLog = validarLog($_POST);
 		if (empty($errorLog)) {
-			header('location: pagina1.html');
+			$usuario = existeEmail($mail);
+			loguear($usuario);
+			if (isset($_POST["recordar"])) {
+	        setcookie('id', $usuario['id'], time() + 3600 * 24 * 30);
+	      }
+				header('location: pagina1.php');
 			exit;
+
 		}
 }
 }
@@ -82,9 +88,13 @@ if ($_POST) {
 		    <input type="password" name="cont" ><p class="text-danger">
 				<?= isset($errorLog['cont']) ? $errorLog['cont'] : '' ; ?> </p>
 		  </div>
-		  <div>
-				<button type="submit" class="logueate" name="log">Logueate</button>
-			</div>
+						<div class="form-group">
+							Recordar
+							<input type="checkbox" name="recordar">
+						</div>
+				<div>
+					<button type="submit" class="logueate" name="log">Logueate</button>
+				</div>
 		</form>
 		</article>
 	</section>

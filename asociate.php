@@ -4,7 +4,9 @@ require_once('funciones.php');
 
 if ($_POST) {
 	$errorSubirTaller = validarSubirTaller($_POST, "foto");
-
+	if (empty($errorSubirTaller)) {
+		loguearTaller();
+	}
 }
 ?>
 <!DOCTYPE html>

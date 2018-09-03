@@ -146,21 +146,26 @@
      return $errorSubirTaller;
    }
 
-   function crearTaller($data, $imagen) {
-   		$taller = [
-   			'id' => $data['nombreTaller'],
-   			'nombreTaller' => $data['nombreTaller'],
-   			'direccionTaller' => $data['direccionTaller'],
-   			'foto' => 'img/' . $data['nombreTaller'] . '.' . pathinfo($_FILES[$imagen]['name'], PATHINFO_EXTENSION)
-   		];
-   	   return $taller;
+ function crearTaller($data, $imagen) {
+   	$taller = [
+   		'id' => $data['nombreTaller'],
+   		'nombreTaller' => $data['nombreTaller'],
+   		'direccionTaller' => $data['direccionTaller'],
+      'descripcionTaller' => $data['descripcionTaller'],
+   		'foto' => 'imagenes_talleres/' . $data['nombreTaller'] . '.' . pathinfo($_FILES[$imagen]['foto'], PATHINFO_EXTENSION)
+   	];
+  	   return $taller;
+ 	}
+
+ function guardartaller($data){
+  	$taller= crearTaller($data);
+   	$tallerJSON = json_encode($taller);
+   	file_put_contents('talleres.json', $tallerJSON . PHP_EOL, FILE_APPEND);
+ 		return $taller;
    	}
 
-   function guardartaller($data){
-   		$taller= crearTaller($data);
-     	$tallerJSON = json_encode($taller);
-     	file_put_contents('talleres.json', $tallerJSON . PHP_EOL, FILE_APPEND);
-   		return $taller;
-   	}
-
+  function loguearTaller(){
+   header('location: pagina1.html');
+   exit;
+  }
  ?>

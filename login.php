@@ -37,10 +37,10 @@ if ($_POST) {
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Login</title>
-		<link rel="stylesheet" href="css/login.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,500,700,800" rel="stylesheet">
+		<link rel="stylesheet" href="css/login.css">
 	</head>
 	<body>
 	<div class="container contenedor">
@@ -100,10 +100,10 @@ if ($_POST) {
 	</section>
 		<div class="logo_texto" >
 			<img src="img/talleres.png" alt="" class="imag">
-		  <p class="tenesun">Tenes un taller? Asociate <a href="#">aca</a></p>
+		  <p class="tenesun">Tenes un taller? Asociate <a href="asociate.php">aca</a></p>
 		</div>
 </div>
-	<footer class="container-fluid">
+	<footer class="container-fluid footerp">
 		<ul>
 			<li><a class="footer" href="quienes_somos.html">¿Quienes somos?</a></li>
 			<li><a class="footer" href="faqs.html">Preguntas Frecuentes</a></li>

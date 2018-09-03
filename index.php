@@ -26,14 +26,19 @@
          </div>
        </nav>
      </header>
-     <div class="container border">
-       <div class="textoUno border">
-         <p>Necesitas un taller para tu auto?</p>
+     <div class="container">
+       <div class="textoUno">
+         <h1 class="tit">¿Necesitas un taller para tu auto?</h1>
       </div>
       <br>
-      <div class="boton">
-        <a href="login.php" class="badge badge-pill badge-primary botones_home_dos ingB" > <p class="ing">Ingresa</p></a>
+      <div class="boton bot border">
+        <a href="login.php" > <p class="text">Ingresa</p></a>
       </div>
+      <div class="logo_texto" >
+  			<img src="img/talleres.png" alt="" class="imag">
+  		  <p class="tenesun">Tenes un taller? ¡Asociate <a href="asociate.php">aca!</a></p>
+  		</div>
+  </div>
      </div>
    </body>
  </html>

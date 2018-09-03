@@ -32,7 +32,6 @@
 		return $errorReg;
 	}
 
-
   function validarLog ($data){
     $errorLog = [];
     $mail = trim($data['mail']);
@@ -100,33 +99,68 @@
   		return $usuario;
   	}
 
-  	function loguear($usuario) {
+	function loguear($usuario) {
   	   $_SESSION['id'] = $usuario['id'];
   		header('location: pagina1.html');
   		exit;
   	}
 
-  	function estaLogueado() {
-  		return isset($_SESSION['id']);
+	function estaLogueado() {
+  	return isset($_SESSION['id']);
   	}
 
-  	function traerPorId($id){
-  		$todos = traerTodos();
-  		foreach ($todos as $usuario) {
-  			if ($id == $usuario['id']) {
-  				return $usuario;
-  			}
+	function traerPorId($id){
+  	$todos = traerTodos();
+  	foreach ($todos as $usuario) {
+  		if ($id == $usuario['id']) {
+  			return $usuario;
   		}
-  		return false;
   	}
+		return false;
+	}
 
+  function validarSubirTaller($data, $foto){
 
+     $errorSubirTaller = [];
+     $nombreTaller = trim($data['nombreTaller']);
+     $direccionTaller = trim($data['direccionTaller']);
+     $descripcionTaller = trim($data['descripcionTaller']);
 
+     if ($nombreTaller == '' ) {
+       $errorSubirTaller['nombreTaller'] = "Por favor completa con el nombre de tu taller";
+     }
+     if ($direccionTaller == '') {
+       $errorSubirTaller['direccionTaller'] = "Completa por favor con la direccion de tu taller";
+     }
+     if ($descripcionTaller == '') {
+       $errorSubirTaller['descripcionTaller'] = "Completa por favor con la descripcion de tu taller";
+     }
+     if ($_FILES[$foto]['error'] != UPLOAD_ERR_OK) {
+ 			$errorSubirTaller['foto'] = "Subí una imagen por favor";
+ 		} else {
+ 			$ext = strtolower(pathinfo($_FILES[$foto]['name'], PATHINFO_EXTENSION));
+ 			if ($ext != 'jpg' && $ext != 'png' && $ext != 'jpeg') {
+ 				$errorSubirTaller['foto'] = "Formatos admitidos: JPG, PNG O JPEG";
+ 			}
+    }
+     return $errorSubirTaller;
+   }
 
+   function crearTaller($data, $imagen) {
+   		$taller = [
+   			'id' => $data['nombreTaller'],
+   			'nombreTaller' => $data['nombreTaller'],
+   			'direccionTaller' => $data['direccionTaller'],
+   			'foto' => 'img/' . $data['nombreTaller'] . '.' . pathinfo($_FILES[$imagen]['name'], PATHINFO_EXTENSION)
+   		];
+   	   return $taller;
+   	}
 
-
-
-
-
+   function guardartaller($data){
+   		$taller= crearTaller($data);
+     	$tallerJSON = json_encode($taller);
+     	file_put_contents('talleres.json', $tallerJSON . PHP_EOL, FILE_APPEND);
+   		return $taller;
+   	}
 
  ?>

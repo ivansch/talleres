@@ -44,17 +44,62 @@ table {
 body{
 	background-image: url(../img/fondo-index.jpg);
 	background-size: 100% ;
+
 	background-repeat: no-repeat;
 }
-p{
-  height: 6.64%;
-  width: 87.4%;
-  color: #FFFFFF;
-  font-family: 'Montserrat';
-  font-size: 50px;
-  font-weight: 800;
-  line-height: 51px;
-  margin: 0 auto;
+
+.tit{
+    display: inline-block;
+    position: absolute;
+    height: 51px;
+    width: 100%;
+    margin-left: -50%;
+    margin-top: -5%;
+    color: #FFFFFF;
+    font-family: "Montserrat";
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 51px;
+    text-align: center;
+}
+.text {
+    height: 19px;
+    width: 100%;
+    margin-top: 5%;
+    color: #FFFFFF;
+    font-family: "Montserrat";
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 19px;
+    text-align: center;
+}
+.imag{
+	height: 61.55px;
+	text-align: left;
+	position: absolute;
+	margin-top: 13.5%;
+	margin-left: 21%;
+	color: white;
+}
+.tenesun{
+    position: absolute;
+  	color: white;
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.39px;
+    margin-top: 15%;
+    margin-left: 25%;
+    text-align: center;
+}
+.bot {
+    box-sizing: border-box;
+    height: 43px;
+    width: 21%;
+    margin-top: 2%;
+    margin: 0 auto;
+    border: 2px solid #FFFFFF;
+    border-radius: 80px;
 }
 .textoUno{
   margin: 0 auto;

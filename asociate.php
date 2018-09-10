@@ -3,10 +3,13 @@ require_once('funciones.php');
 
 
 if ($_POST) {
-	$errorSubirTaller = validarSubirTaller($_POST, "foto");
+	$errorSubirTaller = validarSubirTaller($_POST, 'foto');
 	if (empty($errorSubirTaller)) {
+		$taller = crearTaller($_POST);
+		guardartaller($taller);
 		loguearTaller();
 	}
+
 }
 ?>
 <!DOCTYPE html>
@@ -25,7 +28,7 @@ if ($_POST) {
 		<section class="">
 		  <article class="miTaller col-10 col-sm-10 col-md-10 col-lg-10 col-xl-6" >
 		    <p class="sosnuevo">Mi Taller</p>
-		    <form method="post" action="" enctype="multipart/form-data">
+		    <form method="post" enctype="multipart/form-data">
 		      <div class="form-group">
 					<label class="parrwhite">Nombre</label>
 						<input  class="input2" type="text" name="nombreTaller" value=""><p class="text-warning">
@@ -66,8 +69,8 @@ if ($_POST) {
 </div>
 	<footer class="container-fluid">
 		<ul>
-			<li><a class="footer" href="quienes_somos.html">¿Quienes somos?</a></li>
-			<li><a class="footer" href="faqs.html">Preguntas Frecuentes</a></li>
+			<li><a class="footer" href="quienes_somos.php">¿Quienes somos?</a></li>
+			<li><a class="footer" href="faqs.php">Preguntas Frecuentes</a></li>
 		</ul>
 	</footer>
 	</body>

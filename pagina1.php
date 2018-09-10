@@ -40,7 +40,7 @@
         <main class="main_index col-xl-6 col-lg-8 col-md-8">
           <div class="row">
             <article class=" pad col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                <a href="talleres.html">
+                <a href="talleres.php">
                   <div class="cuadrado">
                   <img class="imagen_cuadrado" src="img/talleres.png" alt=""><br><br>
                   <h2 class="letras_cuadrados">TALLERES</h2>
@@ -48,7 +48,7 @@
                 </a>
               </article>
               <article class="pad col-xl-6 col-lg-6 col-md-6 col-sm-6 ">
-                  <a href="gomerias.html">
+                  <a href="gomerias.php">
                     <div class="cuadrado">
                       <img class="imagen_cuadrado" src="img/gomerias.png" alt="GOMERIAS"><br><br>
                       <h2 class="letras_cuadrados">GOMERIAS</h2>
@@ -56,7 +56,7 @@
                   </a>
               </article>
               <article class=" pad col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                  <a href="lubricentro.html">
+                  <a href="lubricentro.php">
                     <div class="cuadrado">
                       <img class="imagen_cuadrado" src="img/lubricentros.png" alt="LUBRICENTROS"><br><br>
                      <h2 class="letras_cuadrados margen_cuadrado_lubri">LUBRICENTROS</h2>
@@ -64,7 +64,7 @@
                  </a>
                 </article>
                <article class="pad  col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                  <a href="autoradio.html">
+                  <a href="autoradio.php">
                     <div class="cuadrado">
                       <img class="imagen_cuadrado" src="img/autoradio.png" alt="autoradio"><br><br>
                      <h2 class="letras_cuadrados margen_cuadrado_autor ">AUTORADIOS</h2>
@@ -82,8 +82,8 @@
             </article>
           </div>
     <footer>
-        <a href="quienes_somos.html" class="footer">Quiénes somos</a>
-        <a href="faqs.html" class="footer">|  Preguntas Frecuentes</a>
+        <a href="quienes_somos.php" class="footer">Quiénes somos</a>
+        <a href="faqs.php" class="footer">|  Preguntas Frecuentes</a>
     </footer>
   </body>
 </html>

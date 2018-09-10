@@ -139,20 +139,25 @@
  			$errorSubirTaller['foto'] = "Subí una imagen por favor";
  		} else {
  			$ext = strtolower(pathinfo($_FILES[$foto]['name'], PATHINFO_EXTENSION));
- 			if ($ext != 'jpg' && $ext != 'png' && $ext != 'jpeg') {
+      $archivoFisico = $_FILES[$foto]['tmp_name'];
+ 			if ($ext == 'jpg' || $ext == 'png' || $ext == 'jpeg') {
+        $dondeEstoyParado = dirname(__FILE__);
+				$rutaFinalConNombre = $dondeEstoyParado . '/imagenes_talleres/' . $_POST['nombreTaller'] . '.' . $ext;
+
+				move_uploaded_file($archivoFisico, $rutaFinalConNombre);
+      }else{
  				$errorSubirTaller['foto'] = "Formatos admitidos: JPG, PNG O JPEG";
  			}
     }
      return $errorSubirTaller;
    }
 
- function crearTaller($data, $imagen) {
+ function crearTaller($data) {
    	$taller = [
    		'id' => $data['nombreTaller'],
    		'nombreTaller' => $data['nombreTaller'],
    		'direccionTaller' => $data['direccionTaller'],
       'descripcionTaller' => $data['descripcionTaller'],
-   		'foto' => 'imagenes_talleres/' . $data['nombreTaller'] . '.' . pathinfo($_FILES[$imagen]['foto'], PATHINFO_EXTENSION)
    	];
   	   return $taller;
  	}
@@ -165,7 +170,8 @@
    	}
 
   function loguearTaller(){
-   header('location: pagina1.html');
+   header('location: pagina1.php');
    exit;
   }
+
  ?>

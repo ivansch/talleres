@@ -1,7 +1,9 @@
 <?php
-require_once('funciones.php');
+include_once("loader.php");
+require_once("classes/Usuario.php");
 
-	$mail = '';
+//como solamente registro con email, creo variable vacia para llamarla en el Value del campo email del form
+$emailDefault = "";
 	$name = '';
 	$email = '';
 
@@ -55,7 +57,7 @@ if ($_POST) {
 		      </div>
 		    <div class="form-group">
 		      <label class="parrwhite">Mail</label>
-					<input type="text" name="email" value="<?=$email?>">	 <p class="text-warning">
+					<input type="text" name="email" value="<?=$emailDefault?>">	 <p class="text-warning">
 					 <?= isset($errorReg['email']) ? $errorReg['email'] : '' ; ?>
 				 </p>
 		    </div>
@@ -105,8 +107,8 @@ if ($_POST) {
 </div>
 	<footer class="container-fluid footerp">
 		<ul>
-			<li><a class="footer" href="quienes_somos.html">¿Quienes somos?</a></li>
-			<li><a class="footer" href="faqs.html">Preguntas Frecuentes</a></li>
+			<li><a class="footer" href="quienes_somos.php">¿Quienes somos?</a></li>
+			<li><a class="footer" href="faqs.php">Preguntas Frecuentes</a></li>
 		</ul>
 	</footer>
 	</body>

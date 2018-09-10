@@ -71,7 +71,7 @@
         </button>
 
 <!-- The Modal -->
-<div id="myModal" class="modal">
+<div  class="modal">
 
   <!-- Modal content -->
   <div class="modal-content">
@@ -102,7 +102,7 @@
       </button>
 
 <!-- The Modal -->
-<div id="myModal" class="modal">
+<div  class="modal">
 
 <!-- Modal content -->
 <div class="modal-content">
@@ -133,7 +133,7 @@
       </button>
 
 <!-- The Modal -->
-<div id="myModal" class="modal">
+<div  class="modal">
 
 <!-- Modal content -->
 <div class="modal-content">
@@ -164,7 +164,7 @@
       </button>
 
 <!-- The Modal -->
-<div id="myModal" class="modal">
+<div  class="modal">
 
 <!-- Modal content -->
 <div class="modal-content">
@@ -195,7 +195,7 @@
       </button>
 
 <!-- The Modal -->
-<div id="myModal" class="modal">
+<div  class="modal">
 
 <!-- Modal content -->
 <div class="modal-content">
@@ -226,7 +226,7 @@
       </button>
 
 <!-- The Modal -->
-<div id="myModal" class="modal">
+<div  class="modal">
 
 <!-- Modal content -->
 <div class="modal-content">
@@ -254,7 +254,7 @@
   </body>
   <script type="text/javascript">
   // Get the modal
-  var modal = document.getElementById('myModal');
+  var modal = document.getElementsByClassName("modal");
 
   // Get the button that opens the modal
   var btn = document.getElementById("myBtn");

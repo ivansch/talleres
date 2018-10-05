@@ -2,7 +2,7 @@
   require_once('funciones.php');
 
   if (estaLogueado()) {
-    header('location: pagina1.php');
+    header('location: pagina1.html');
     exit;
   }
 
@@ -31,12 +31,12 @@
          <h1 class="tit">¿Necesitas un taller para tu auto?</h1>
       </div>
       <br>
-      <div class="boton bot border">
+      <div class="boton bot">
         <a href="login.php" > <p class="text">Ingresa</p></a>
       </div>
       <div class="logo_texto" >
   			<img src="img/talleres.png" alt="" class="imag">
-  		  <p class="tenesun">Tenes un taller? ¡Asociate <a href="asociate.php">aca!</a></p>
+  		  <p class="tenesun">Tenes un taller? <a class="aca" href="#">¡Asociate aca!</a></p>
   		</div>
   </div>
      </div>

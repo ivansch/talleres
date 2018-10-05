@@ -61,28 +61,27 @@ body{
 }
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0%;
-		border-radius: 18px;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-     /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0%;
+	border-radius: 18px;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+   /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 .rectangle-10{
-		width: 40%;
-    display: inline-block;
-    position: relative;
-    margin-top: 13px;
-    margin-left: 11px
+	width: 40%;
+  display: inline-block;
+  position: relative;
+  margin-top: 13px;
+  margin-left: 11px
 }
 .sta {
 	text-align: end;
-
 	width: 12%;
 	display: inline-block;
 	position: absolute;
@@ -101,28 +100,28 @@ h3{
 
 }
 .descrip {
-    width: 48%;
-    color: rgba(0,0,0,0.87);
-    font-family: "Montserrat";
-    font-size: 100%;
-    font-weight: 300;
-    line-height: 19px;
-    display: inline-block;
-    position: absolute;
-    margin-left: 45%;
-    margin-top: 6%;
+  width: 48%;
+  color: rgba(0,0,0,0.87);
+  font-family: "Montserrat";
+  font-size: 100%;
+  font-weight: 300;
+  line-height: 19px;
+  display: inline-block;
+  position: absolute;
+  margin-left: 45%;
+  margin-top: 6%;
 }
 .califi {
 	color: #3972FC;
-font-family: "Montserrat";
-font-size: 118%;
-font-weight: 800;
-line-height: 19px;
-text-align: right;
-display: inline-block;
-position: absolute;
-margin-top: 31%;
-margin-left: 91%;
+	font-family: "Montserrat";
+	font-size: 118%;
+	font-weight: 800;
+	line-height: 19px;
+	text-align: right;
+	display: inline-block;
+	position: absolute;
+	margin-top: 31%;
+	margin-left: 91%;
 }
 .cardh {
 	width: 100%;
@@ -137,41 +136,40 @@ margin-left: 91%;
 	margin-top: 2%;
 }
 
-
 /* Modal Content/Box */
 .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-		bottom: 15%;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+	bottom: 15%;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
 .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 /* navbar ordenar por */
 .ordenar-por {
-height: 28px;
-width: 92px;
-color: #9B9B9B;
-font-family: "Montserrat";
-font-size: 16px;
-font-weight: 500;
-line-height: 19px;
-text-align: right
+	height: 28px;
+	width: 92px;
+	color: #9B9B9B;
+	font-family: "Montserrat";
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 19px;
+	text-align: right
 }
 .textonav {
 	height: 32px;
@@ -185,36 +183,39 @@ text-align: right
 }
 .rectanglenav {
  height: 40px;
-width: 78%;
-border-radius: 80px;
-left: 9%;
-margin-top: 32%;
-position: absolute;
-z-index: 1;
+	width: 78%;
+	border-radius: 80px;
+	left: 9%;
+	margin-top: 32%;
+	position: absolute;
+	z-index: 1;
 }
 .texttall {
 	height: 51px;
-width: 170px;
-color: rgba(0,0,0,0.87);
-font-family: "Montserrat";
-font-size: 40px;
-font-weight: 900;
-line-height: 51px;
-margin-left: 33%;
-position: absolute;
-margin-top: 14%;
+	width: 170px;
+	color: rgba(0,0,0,0.87);
+	font-family: "Montserrat";
+	font-size: 40px;
+	font-weight: 900;
+	line-height: 51px;
+	margin-left: 33%;
+	position: absolute;
+	margin-top: 14%;
 }
 .fill-7 {
 	width: 23%;
-    margin-top: 8%;
-    margin-left: 12%;
-    position: absolute
+  margin-top: 8%;
+  margin-left: 12%;
+  position: absolute
 }
 .cards{
 	margin-top: 50%;
 	position: absolute;
 	display: flex;
 	flex-wrap: wrap;
+}
+.rectangle-6:hover{
+	border: 2px solid #3972FC;
 }
 .rectangle-6 {
 	border-radius: 10px;
@@ -226,16 +227,16 @@ margin-top: 14%;
 }
 .cardh2 {
 	height: 22px;
-    width: 207px;
-    color: rgba(0,0,0,0.87);
-    font-family: "Montserrat";
-    font-size: 18px;
-    font-weight: 800;
-    line-height: 22px;
-    display: inline-block;
-    position: absolute;
-    margin-left: 75px;
-    margin-top: 9px;
+  width: 207px;
+  color: rgba(0,0,0,0.87);
+	font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 22px;
+  display: inline-block;
+  position: absolute;
+  margin-left: 75px;
+  margin-top: 9px;
 }
 .star{
   text-align: end;
@@ -250,30 +251,29 @@ margin-top: 14%;
 
 }
 .vema{
-		height: 15px;
-		width: 100%;
-		color: #3972FC;
-		font-family: "Montserrat";
-		font-size: 12px;
-		font-weight: 300;
-		line-height: 15px;
+	height: 15px;
+	width: 100%;
+	color: #3972FC;
+	font-family: "Montserrat";
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 15px;
 }
 .verm {
-
 	width: 65px;
-    border: 1px solid #3972FC;
-    border-radius: 80px;
-    margin-left: 51%;
-    position: absolute;
-    margin-top: 18%;
-
+  border: 1px solid #3972FC;
+  border-radius: 80px;
+  margin-left: 51%;
+  position: absolute;
+  margin-top: 18%;
 }
 .bitmap {
-	height: 592px;
-	width: 616px;
 	display: none;
-
+	height: 526px;
+	width: 582px;
+	border: 1px solid #3972FC;
 }
+
 .califica {
 	height: 19px;
 	width: 12%;
@@ -290,43 +290,43 @@ margin-top: 14%;
 }
 .rectangle-9 {
 	height: 57px;
-    width: 57px;
-    display: inline-block;
-    position: relative;
-    margin-top: 13px;
-    margin-left: 11px
+  width: 57px;
+  display: inline-block;
+  position: relative;
+  margin-top: 13px;
+  margin-left: 11px
 }
 .descripcion{
 	height: 42px;
-width: 53%;
-color: rgba(0,0,0,0.87);
-font-family: "Montserrat";
-font-size: 12px;
-font-weight: 300;
-line-height: 15px;
-display: inline-block;
-position: absolute;
-margin-left: 8px;
-margin-top: 31px;
+	width: 53%;
+	color: rgba(0,0,0,0.87);
+	font-family: "Montserrat";
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 15px;
+	display: inline-block;
+	position: absolute;
+	margin-left: 8px;
+	margin-top: 31px;
 }
 @media (min-width:387px){
   body{
-    background-size: 60%;
+  	background-size: 60%;
   }
   .verm{
-    margin-left: 58%;
-    margin-top: 13%;
+  	margin-left: 58%;
+  	margin-top: 13%;
   }
   .star {
-  margin-left: 69%;
+  	margin-left: 69%;
   }
   .califica {
-    margin-left: 73%;
+  	margin-left: 73%;
 }
 }
 @media (min-width:460px){
   body{
-    background-size: 65%;
+  	background-size: 65%;
   }
   .verm{
     margin-left: 58%;
@@ -345,7 +345,7 @@ margin-top: 31px;
     margin-top: 10%;
   }
   .star {
-  margin-left: 75%;
+  	margin-left: 75%;
   }
   .califica {
     margin-left: 75%;
@@ -366,9 +366,7 @@ margin-top: 31px;
     margin-left: 76%;
 }
 .fill-7 {
-
-    margin-left: 23%;
-
+	margin-left: 23%;
 }
 .texttall {
     margin-left: 43%;
@@ -384,15 +382,13 @@ margin-top: 31px;
     margin-top: 8%;
   }
   .star {
-  margin-left: 80%;
+  	margin-left: 80%;
   }
   .califica {
     margin-left: 77%;
 }
-.fill-7 {
-
-    margin-left: 23%;
-
+	.fill-7 {
+		margin-left: 23%;
 }
 .texttall {
     margin-left: 43%;
@@ -406,7 +402,7 @@ margin-top: 31px;
   }
   .texttall {
 		margin-left: 41%;
-    margin-top: 22.5%;
+		margin-top: 25.5%;
 }
 .fill-7 {
     width: 11%;
@@ -435,13 +431,17 @@ margin-top: 31px;
 
 @media (min-width:768px){
 	.bitmap {
-	    width: 100%;
-	    height: 36%;
-	    display: inline-block;
-	    position: absolute;
-	    margin-top: 41%;
-	    margin-left: 42%;
-	    border-radius: 8px;
+	  width: 100%;
+	  height: 36%;
+	  display: inline-block;
+	  position: absolute;
+	  margin-top: 41%;
+	  margin-left: 42%;
+	  border-radius: 8px;
+	}
+	.texttall {
+		margin-left: 41%;
+		margin-top: 25.5%;
 	}
 	.cards {
     margin-top: 41%;
@@ -452,11 +452,11 @@ margin-top: 31px;
   .verm {
     margin-left: 46%;
     margin-top: 20%;
-}
-.califica {
+	}
+	.califica {
     margin-left: 69%;
-}
-.star {
+	}
+	.star {
     margin-left: 62%;
 }
 .bitmap {
@@ -469,6 +469,9 @@ margin-left: 42%;
 border-radius: 8px;
 }
 }
+
+
+
 @media (min-width:860px){
   .verm {
     margin-left: 50%;
@@ -556,7 +559,7 @@ body{
       margin-top: 10%;
   }
   .star{
-    margin-left: 81%;
+    margin-left: 78%;
   }
   .califica{
     margin-left: 77%;

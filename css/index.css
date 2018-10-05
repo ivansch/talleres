@@ -54,7 +54,7 @@ body{
     height: 51px;
     width: 100%;
     margin-left: -50%;
-    margin-top: -5%;
+    margin-top: -16%;
     color: #FFFFFF;
     font-family: "Montserrat";
     font-size: 50px;
@@ -77,8 +77,8 @@ body{
 	height: 61.55px;
 	text-align: left;
 	position: absolute;
-	margin-top: 13.5%;
-	margin-left: 21%;
+	margin-top: 13%;
+	margin-left: 29%;
 	color: white;
 }
 .tenesun{
@@ -89,15 +89,15 @@ body{
     font-weight: bold;
     letter-spacing: 0.39px;
     margin-top: 15%;
-    margin-left: 25%;
+    margin-left: 34%;
     text-align: center;
 }
 .bot {
     box-sizing: border-box;
     height: 43px;
     width: 21%;
-    margin-top: 2%;
-    margin: 0 auto;
+    margin-top: -14%;
+    margin-left: 43%;
     border: 2px solid #FFFFFF;
     border-radius: 80px;
 }
@@ -105,4 +105,15 @@ body{
   margin: 0 auto;
   margin-top: 40%;
   text-align: center;
+}
+.aca{
+	height: 22px;
+	width: 301px;
+	color: #E5E5E5;
+	font-family: "Montserrat";
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: 0.39px;
+	line-height: 22px;
+	text-align: center;
 }

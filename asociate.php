@@ -1,5 +1,6 @@
 <?php
 require_once('funciones.php');
+require_once('footer.php');
 
 
 if ($_POST) {
@@ -27,7 +28,7 @@ if ($_POST) {
 	<div class="container contenedor">
 		<section class="">
 		  <article class="miTaller col-10 col-sm-10 col-md-10 col-lg-10 col-xl-6" >
-		    <p class="sosnuevo">Mi Taller</p>
+		    <p class="sosnuevo">Mi Local</p>
 		    <form method="post" enctype="multipart/form-data">
 		      <div class="form-group">
 					<label class="parrwhite">Nombre</label>
@@ -44,6 +45,16 @@ if ($_POST) {
       				<option class="parrblack">Gonnet</option>
     					</select>
   			</div>
+				<div class="form-group">
+					<label class="parrwhite"for="exampleFormControlSelect1">Negocio</label>
+						<select class="form-control input2" id="exampleFormControlSelect1">
+						<option class="parrblack">Taller</option>
+						<option class="parrblack">Gomeria</option>
+						<option class="parrblack">Lubricentro</option>
+						<option class="parrblack">Autoradio</option>
+						
+						</select>
+			</div>
 		    <div class="form-group">
 		      <label class="parrwhite">Dirección</label>
 					<input class="input2"type="text" name="direccionTaller" value="">	 <p class="text-warning">
@@ -67,11 +78,6 @@ if ($_POST) {
 		</article>
 	</section>
 </div>
-	<footer class="container-fluid">
-		<ul>
-			<li><a class="footer" href="quienes_somos.php">¿Quienes somos?</a></li>
-			<li><a class="footer" href="faqs.php">Preguntas Frecuentes</a></li>
-		</ul>
-	</footer>
+
 	</body>
 </html>

@@ -5,50 +5,51 @@
 		$_SESSION['id'] = $_COOKIE['id'];
 	}
 
-  function validarReg($data) {
-		$errorReg= [];
-		$name = trim($data['name']);
-		$email = trim($data['email']);
-		$pass = trim($data['pass']);
-		$rpass = trim($data['rpass']);
+  function validarInformacion($datos) {
+		$errores= [];
 
-		if ($name == '') {
-			$errorReg['name'] = "Completa por favor tu nombre";
-		}
-
-		if ($email == '') {
-			$errorReg['email'] = "Completa por favor tu email";
-		} elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-			$errorReg['email'] = "Por favor completa con un formato de email valido";
-		}elseif (existeEmail($email)) {
-			$errorReg['email'] = "Este email ya existe.";
-		}
-
-		if ($pass == '' || $rpass == '') {
-			$errorReg['pass'] = "Por favor completa tu contraseña";
-		} elseif ($pass != $rpass) {
-			$errorReg['pass'] = "Tus contraseñas no coinciden";
-		}
-		return $errorReg;
-	}
-
-  function validarLog ($data){
-    $errorLog = [];
-    $mail = trim($data['mail']);
-    $cont = trim($data['cont']);
-    if ($cont == '' ) {
-      $errorLog['cont'] = "Por favor completa tu contraseña";
+    foreach($datos as $key => $value){
+         $datos[$key] = trim($value);
+     }
+      // ahora podemos empezar a usar cada valor del array que entre como parametro
+     //el array de errores vacio que vamos a ir llenando
+     //SI LLEGAN POR EL FORMULARIO DE REGISTRO, VALIDO LA INFORMACION
+    if (isset($_POST['reg'])) {
+  		  if(strlen($datos['name']) == 0){
+  			$errores['name'] = "Completa por favor tu nombre";
+  		}
+  		if (strlen($datos['email']) == 0) {
+  			$errores['email'] = "Completa por favor tu email";
+  		} elseif (!filter_var($datos['email'], FILTER_VALIDATE_EMAIL)) {
+  			$errores['email'] = "Por favor completa con un formato de email valido";
+  		}elseif (buscamePorMail($datos['email']) != NULL){
+          $errores['email'] = "El mail ingresado ya existe";
+      }
+      if(strlen($datos['pass']) < 4){
+          $errores['pass'] = "La contraseña es muy corta";
+        }
+  		if ($datos['pass'] == '' || $datos['rpass'] == '') {
+  			$errores['pass'] = "Por favor completa tu contraseña";
+  		} else if ($datos['pass'] != $datos['rpass']){
+          $errores['pass'] = "La contraseña no coincide";
+      }
     }
-    if ($mail == '') {
-      $errorLog['mail'] = "Completa por favor tu mail";
-    } elseif (!filter_var($mail, FILTER_VALIDATE_EMAIL)) {
-      $errorLog['mail'] = "Por favor poner un formato de mail valido";
-    }elseif (!$usuario = existeEmail($mail)) {
-			$errorLog['email'] = 'Este email no está registrado';
-		}elseif (!password_verify($cont, $usuario["pass"])) {
-      $errorLog['pass'] = "Tu contraseña es incorrecta";
+    //SI LLEGAN POR EL FORMULARIO DE LOGUEO, VERIFICO
+    if (isset($_POST['log'])) {
+      if (strlen($datos['cont']) == 0) {
+        $errores['cont'] = "Por favor completa tu contraseña";
+      }
+      if (strlen($datos['mail']) == 0) {
+        $errores['mail'] = "Completa por favor tu mail";
+      } elseif (!filter_var($datos['mail'], FILTER_VALIDATE_EMAIL)) {
+        $errores['mail'] = "Por favor poner un formato de mail valido";
+      }elseif (!$usuario = existeEmail($datos['mail'])) {
+  			$errores['email'] = 'Este email no está registrado';
+  		}elseif (!password_verify($datos['cont'], $usuario["pass"])) {
+        $errores['cont'] = "Tu contraseña es incorrecta";
+      }
     }
-    return $errorLog;
+    return $errores;
   }
 
   function traerTodos() {
@@ -173,5 +174,45 @@
    header('location: pagina1.php');
    exit;
   }
+  function logout() {
+      session_destroy();
+      //seteo de cookie con -1 para que "muera" D=
+      setcookie("email", "", -1);
+      header('location:index.php');
+  }
+  function buscamePorMail($email){
+      //Generamos un array de TODA LA BASE DE DATOS para poder manejarla con PHP
+      $usuariosTraidos = traeTodaLaBase();
+      //la procesamos para buscar el mail que pasamos como parametro
+      //a ver si existe o no
+      foreach($usuariosTraidos as $usuario){
+          //SI elMailDeLaBase es igualigual al mailPasadoPorParametro
+          if($usuario['email'] == $email){
+              //returname el usario
+              return $usuario;
+          }
+      }
+      //si no, "returname" NULL asi uso el dato para validar
+      return null;
+  }
+  function traeTodaLaBase(){
+      //le asignamos a $contenido, TODO lo que tiene mi base de datos
+      $contenido = file_get_contents('usuarios.json');
 
- ?>
+      //generamos el array de usuarios, PERO, ese array va a tener
+      //en cada valor, un string en formato json que vamos a hacerle decode mas abajo
+      $usuariosJSON = explode(PHP_EOL, $contenido);
+      array_pop($usuariosJSON);
+
+      //array vacio de usuarios traidos, como lo llenamos? con un foreach
+      $usuariosTraidos = [];
+
+      foreach($usuariosJSON as $usuario){
+          //ACA le insertamos al array vacio, un array por usuario, porque
+          //a cada valor que teiamos en $usuariosJSON, le aplicamos json_decode!
+          $usuariosTraidos[] = json_decode($usuario, true);
+      }
+
+      //"returname" un array que pueda usar en PHP
+      return $usuariosTraidos;
+  }

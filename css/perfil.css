@@ -172,60 +172,6 @@ body{
 	line-height: 19px;
 	text-align: center;
 }
-footer{
-  background-color: black;
-	text-align: center;
-	height: 75px;
-  bottom:  -50%;
-	width: 100%;
-	position: absolute;
-
-}
-.contacto{
-	margin-left: 33%;
-	margin-top: 4%;
-	box-sizing: border-box;
-	height: 27px;
-	width: 167px;
-	border: 2px solid #FFFFFF;
-	border-radius: 10px;
-
-}
-.logoinsta{
-	height: 26.81px;
-	width: 26.81px;
-	margin-left:-70%;
-  margin-top: 10%;
-  position: absolute
-}
-.logoface{
-	height: 26.81px;
-	width: 26.81px;
-	margin-left: -80%;
-    margin-top: 10%;
-    position: absolute
-}
-footer a{
-  color: white;
-  display: inline;
-	font-family: 'Montserrat';
-	font-size: 11px;
-	letter-spacing: 1.71px;
-	line-height: 21px;
-	font-weight: 200;
-}
-footer ul{
-text-align:center;
-padding-top: 10px;
-list-style-type: none;
-}
-
-footer li{
-  list-style-type: none;
-   display: inline;
-   padding-right: 5px;
-
-}
 
 @media (min-width: 425px) {
 	.nombreusu {

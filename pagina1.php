@@ -1,4 +1,8 @@
-<!doctype html>
+<?php
+require_once('footer.php');
+ ?>
+<!DOCTYPE HTML>
+
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -81,9 +85,6 @@
               <a href="#" class="badge badge-pill badge-primary botones_home_dos" > <p class="sos">S.O.S</p></a>
             </article>
           </div>
-    <footer>
-        <a href="quienes_somos.php" class="footer">Quiénes somos</a>
-        <a href="faqs.php" class="footer">|  Preguntas Frecuentes</a>
-    </footer>
+    
   </body>
 </html>

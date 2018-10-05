@@ -83,10 +83,8 @@
 				</article>
 			</section>
 	</div>
-	<footer class="container-fluid">
-		<ul>
-			<li><a class="footer" href="quienes_somos.html">¿Quienes somos?</a></li>
-		</ul>
-	</footer>
 	</body>
+	<?php
+	require_once('footer.php');
+	 ?>
 </html>

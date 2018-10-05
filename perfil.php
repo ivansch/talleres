@@ -31,7 +31,7 @@
       <p class="parr">La Plata, Buenos Aires ,Argentina.</p>
       <article>
       <button type="button" class="botonazul">
-        <p class="textblanco">Cerrar sesión</p>
+        <a href="logout.php" class="textblanco">Cerrar sesión</a>
       </button>
       <button type="button" class="botonblanco">
         <p class="textazul">Editar perfil</p>

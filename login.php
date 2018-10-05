@@ -51,6 +51,7 @@
         <head>
             <?php require_once('head.php'); ?>
             <link rel="stylesheet" href="css/login.css">
+            <title>Logeo</title>
         </head>
         <body>
         <div class="container contenedor">

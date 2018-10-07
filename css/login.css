@@ -349,7 +349,7 @@ input{
 			}
 			/* image car blue */
 			.imag{
-			margin-left: 2%;
+			margin-left: -6%;
     	margin-top: inherit;
 			margin-bottom: -18%;
 			}
@@ -358,7 +358,7 @@ input{
     	margin-left: 23%;
 			}
 			.footerp{
-				position: absolute;
-				bottom: 0px;
+			position: absolute;
+			bottom: 0px;
 			}
 }

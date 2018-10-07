@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<?php require_once('head.php') ?>
 		<title>Preguntas frecuentes</title>
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<link rel="stylesheet" href="css/faqs.css">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,500,700,800" rel="stylesheet">
 	</head>
 	<body>
 		<header>
@@ -84,7 +81,12 @@
 			</section>
 	</div>
 	</body>
-	<?php
-	require_once('footer.php');
-	 ?>
+	<footer>
+		<a class="q_s" href="quienes_somos.php">¿Quienes somos?</a>
+		<img class="logoface" src="img/facelogo.png" alt="">
+		<img class="logoinsta" src="img/instalogo.png" alt="">
+		<div class="contacto">
+			<a href="#" class="contac">contactanos</a>
+		</div>
+	</footer>
 </html>

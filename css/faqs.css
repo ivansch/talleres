@@ -54,14 +54,10 @@ h2{
   margin-bottom: 100px;
 }
 
-
-
 .linea{
   height: 1px;
   background-color: blue;
 }
-
-
 .faq{
   margin-top: 140px;
   margin-bottom: 30px;
@@ -76,31 +72,70 @@ h2{
   font-weight:800;
 }
 .preg{
-    justify-content: space-around;
+  justify-content: space-around;
   display: inline-flex;
   flex-wrap: wrap;
   flex-direction: row;
-
   width: 100%;
-
-  }
+}
 .subtitulo{
   font-size: 20px;
-
   color: rgba(0,0,0,0.87);
   font-family: "Montserrat";
-
+}
+.contacto{
+	margin-left: 88%;
+	margin-top: 0%;
+	box-sizing: border-box;
+	height: 27px;
+  margin-bottom: 1%;
+	width: 167px;
+	border: 2px solid #FFFFFF;
+	border-radius: 10px;
+}
+.q_s{
+  height: 19px;
+  width: 363px;
+  color: #FFFFFF;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  line-height: 19px;
+}
+.contac{
+  height: 16px;
+  width: 165px;
+  color: #FFFFFF;
+  font-family: "Montserrat";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: center;
+  margin-left: 17%;
+}
+.logoinsta{
+	height: 26.81px;
+	width: 26.81px;
+	margin-left:73%;
+  margin-top:1.5%;
+  position: absolute
+}
+.logoface{
+	height: 26.81px;
+	width: 26.81px;
+  margin-bottom: 1%;
+  margin-left: 70%;
+  margin-top: 1.5%;
+  position: absolute
 }
 
 footer{
-  height: 47px;
+  height: 100%;
   padding: 0px;
   width: 100%;
   background-color: black;
   position: relative;
   bottom: 0px;
 }
-
 footer a{
   color: white;
   display: inline;
@@ -111,20 +146,18 @@ footer a{
 	font-weight: 200;
 }
 footer ul{
-text-align:center;
-padding-top: 10px;
+  text-align:center;
+  padding-top: 10px;
 }
-
 footer li{
   list-style-type: none;
-   display: inline;
-   padding-right: 5px;
-
+  display: inline;
+  padding-right: 5px;
 }
 @media (max-width:992px){
-.header_dos{
-  right: 20%;
-}
+  .header_dos{
+    right: 20%;
+  }
 }
 @media (max-width:768px){
   body{
@@ -165,7 +198,6 @@ footer li{
   	font-weight: 100;
   }
   body{
-
     background-size: contain;
   }
   .header_dos{
@@ -210,8 +242,5 @@ footer{
   background-color: black;
 }
 body{
-
   background-size: contain;
-}
-
 }

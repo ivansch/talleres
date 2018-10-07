@@ -401,22 +401,21 @@ h3{
     background-size: 73%;
   }
   .texttall {
-		margin-left: 41%;
-		margin-top: 25.5%;
+		margin-left: 16%;
+    margin-top: 31%;
 	}
 	/* image car blue  */
 	.fill-7 {
-	width: 8%;
-	margin-left: 1%;
-	margin-top: 7%;
-	margin-left: 3%;
+		width: 10%;
+    margin-top: 29%;
+    margin-left: 7%;
 	}
 .verm{
   margin-left: 75%;
   margin-top: 8%;
 	}
 .star {
-  margin-left: 82%;
+  margin-left: 80%;
 }
   .califica {
     margin-left: 78%;
@@ -430,6 +429,9 @@ h3{
 		margin-left: 42%;
 		border-radius: 8px;
 }
+.rectanglenav {
+	margin-left: 30%;
+}
 
 @media (min-width:768px){
 	.bitmap {
@@ -442,14 +444,14 @@ h3{
 	  border-radius: 8px;
 	}
 	.texttall {
-		margin-left: 41%;
-		margin-top: 25.5%;
+		margin-left: 16%;
+	  margin-top: 31%;
 	}
 	.cards {
     margin-top: 41%;
   }
   .rectanglenav {
-    margin-left: 5%;
+    margin-left: 30%;
   }
   .verm {
     margin-left: 46%;
@@ -563,7 +565,7 @@ body{
       margin-top: 10%;
   }
   .star{
-    margin-left: 78%;
+    margin-left: 80%;
   }
   .califica{
     margin-left: 77%;

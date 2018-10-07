@@ -18,26 +18,25 @@ require_once('head.php');
         </article>
       </nav>
     </header>
-    <section>
-      <article class="rectablanco">
-        <div class="rectaazul">
-          <p class="letra">S</p>
-        </div>
-      </article>
-      <h2 class="nombreusu">Ivan Schmitt</h2>
-      <p class="parr">schmittivan222@gmail.com</p>
-      <p class="parr">2243525721</p>
-      <p class="parr">La Plata, Buenos Aires ,Argentina.</p>
-      <article>
-      <button type="button" class="botonazul">
-        <a href="logout.php" class="textblanco">Cerrar sesión</a>
-      </button>
-      <button type="button" class="botonblanco">
-        <p class="textazul">Editar perfil</p>
-      </button>
-
-      </article>
-    </section>
+      <section>
+        <article class="rectablanco">
+          <div class="rectaazul">
+            <p class="letra">S</p>
+          </div>
+        </article>
+          <h2 class="nombreusu">Ivan Schmitt</h2>
+            <p class="parr">schmittivan222@gmail.com</p>
+            <p class="parr">2243525721</p>
+            <p class="parr">La Plata, Buenos Aires ,Argentina.</p>
+        <article>
+          <button type="button" class="botonazul">
+            <a href="logout.php" class="textblanco">Cerrar sesión</a>
+          </button>
+          <button type="button" class="botonblanco">
+            <p class="textazul">Editar perfil</p>
+          </button>
+        </article>
+      </section>
     <footer>
       <a class="qs" href="#">¿Quienes somos?</a>
       <a class="pf" href="#">Preguntas frecuentes</a>
@@ -46,7 +45,6 @@ require_once('head.php');
       <div class="contacto">
         <a href="#">contactanos</a>
       </div>
-
     </footer>
   </body>
 </html>

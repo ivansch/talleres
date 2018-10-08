@@ -632,3 +632,174 @@ body{
     height: 36%;
 }
 }
+/* --------vista Individual----------- */
+/* --------vista Individual----------- */
+/* --------vista Individual----------- */
+/* --------vista Individual----------- */
+
+/* cuadro principal */
+.principal{
+	margin-left: 2%;
+	margin-right: 2%;
+	height: 650px;
+	width: 96%;
+	margin-top: 6%;
+	border-radius: 30px;
+	background-color: #FFFFFF;
+	border: 2px solid #3972FC;
+}
+.img-taller{
+	width: 45%;
+	border-radius: 5px;
+	margin-left: 1%;
+  margin-top: 2.5%;
+}
+.tit-taller{
+	height: 0px;
+	width: 100%;
+	margin-left: 63%;
+	margin-top: 1%;
+	color: rgba(0,0,0,0.87);
+	font-family: "Montserrat";
+	font-size: 40px;
+	position: absolute;
+	font-weight: 800;
+	line-height: 49px;
+}
+.califi{
+	height: 32px;
+  width: 40px;
+  color: #3972FC;
+  font-family: "Montserrat";
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 32px;
+  text-align: right;
+  margin-left: 45%;
+  margin-top: 35%;
+}
+.des-tall {
+	height: 132px;
+	text-align: justify;
+	width: 48%;
+	position: absolute;
+	margin-left: 45%;
+	margin-top: -29%;
+	color:rgb(45, 41, 42);
+	font-family: "Montserrat";
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 18px;
+}
+.ubicacion{
+	margin-left: 83%;
+	margin-top: 0.2%;
+	width: 100%;
+}
+.contac{
+	height: 22px;
+	width: 100%;
+	color: #4A4A4A;
+	font-family: "Montserrat";
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 22px;
+	margin-left: 45%;
+	margin-top: -23%;
+	position: absolute;
+}
+.especialidad{
+	height: 22px;
+	width: 100%;
+	color: #4A4A4A;
+	font-family: "Montserrat";
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 22px;
+	margin-left: 45%;
+	margin-top: -16%;
+	position: absolute;
+}
+.dire{
+	height: 18px;
+  width: 100%;
+  color: #909090;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  margin-top: -13%;
+  position: absolute;
+  margin-left: -32%;
+}
+.espec{
+	height: 18px;
+  width: 100%;
+  color: #909090;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  margin-top: -13%;
+  position: absolute;
+  margin-left: -15%;
+}
+.nomface{
+	height: 18px;
+  width: 100%;
+  color: #909090;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  margin-top: -20.5%;
+  position: absolute;
+  margin-left: -32%;
+}
+.numwsp{
+	height: 18px;
+  width: 100%;
+  color: #909090;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  margin-top: -20.5%;
+  position: absolute;
+  margin-left: -15%;
+}
+
+.logomapa{
+	height: 31.02px;
+	width: 31px;
+	margin-left: -34.5%;
+	position: absolute;
+	margin-top: -13.5%;
+}
+.msnface{
+	height: 31.02px;
+	width: 31px;
+	margin-left: -50%;
+	position: absolute;
+	margin-top: 14%;
+}
+.wsp{
+	height: 31.02px;
+  width: 31px;
+  margin-left: -33%;
+  position: absolute;
+  margin-top: 14%;
+}
+.tools{
+	height: 34.02px;
+	width: 35px;
+	margin-left: -33%;
+	position: absolute;
+	margin-top: 21.5%;
+}
+.star-vi{
+	height: 26.02px;
+  width: 26px;
+  margin-left: 51%;
+	margin-bottom: -2%;
+}

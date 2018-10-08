@@ -66,9 +66,11 @@ require_once('head.php');
       <img class="rectangle-9" src="img/Taller04.jpg" alt="">
       <img class="star"src="img/star.png" alt="">
         <p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+        <a href="individual.php">
         <button class="verm" id="myBtn">
           <p class="vema">Ver mas</p>
         </button>
+        </a>
 
 <!-- The Modal -->
 <div  class="modal">
@@ -97,9 +99,11 @@ require_once('head.php');
     <img class="rectangle-9" src="img/Taller04.jpg" alt="">
     <img class="star"src="img/star.png" alt="">
       <p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+      <a href="individual.php">
       <button class="verm" id="myBtn">
         <p class="vema">Ver mas</p>
       </button>
+      </a>
 
 <!-- The Modal -->
 <div  class="modal">
@@ -128,9 +132,44 @@ require_once('head.php');
     <img class="rectangle-9" src="img/Taller04.jpg" alt="">
     <img class="star"src="img/star.png" alt="">
       <p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+      <a href="individual.php">
       <button class="verm" id="myBtn">
         <p class="vema">Ver mas</p>
       </button>
+
+    </a>
+<!-- The Modal -->
+<div  class="modal">
+
+<!-- Modal content -->
+<div class="modal-content">
+  <span class="close">&times;</span>
+  <h2 class="cardh">GPS-Taller</h2>
+  <h2 class="califi">4.6</h2>
+  <img class="rectangle-10" src="img/Taller04.jpg" alt="">
+  <img class="sta"src="img/star.png" alt="">
+  <div class="descrip">
+    <h3>Dirección:</h3>
+    <p>Calle 50 nro 722</p>
+    <br>
+    <h3>Barrio:</h3>
+    <p>Centro</p>
+    <br>
+    <h3>Descripcion:</h3>
+    <p>Lorem ipsum dolor sit amet, cons Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehen</p>
+  </div>
+</article>
+<article class="rectangle-6">
+  <h2 class="cardh2">GPS-Taller</h2>
+  <h2 class="califica">4.6</h2>
+    <img class="rectangle-9" src="img/Taller04.jpg" alt="">
+    <img class="star"src="img/star.png" alt="">
+      <p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+      <a href="individual.php">
+      <button class="verm" id="myBtn">
+        <p class="vema">Ver mas</p>
+      </button>
+      </a>
 
 <!-- The Modal -->
 <div  class="modal">
@@ -159,9 +198,11 @@ require_once('head.php');
     <img class="rectangle-9" src="img/Taller04.jpg" alt="">
     <img class="star"src="img/star.png" alt="">
       <p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+      <a href="individual.php">
       <button class="verm" id="myBtn">
         <p class="vema">Ver mas</p>
       </button>
+      </a>
 
 <!-- The Modal -->
 <div  class="modal">
@@ -190,40 +231,11 @@ require_once('head.php');
     <img class="rectangle-9" src="img/Taller04.jpg" alt="">
     <img class="star"src="img/star.png" alt="">
       <p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+      <a href="individual.php">
       <button class="verm" id="myBtn">
         <p class="vema">Ver mas</p>
       </button>
-
-<!-- The Modal -->
-<div  class="modal">
-
-<!-- Modal content -->
-<div class="modal-content">
-  <span class="close">&times;</span>
-  <h2 class="cardh">GPS-Taller</h2>
-  <h2 class="califi">4.6</h2>
-  <img class="rectangle-10" src="img/Taller04.jpg" alt="">
-  <img class="sta"src="img/star.png" alt="">
-  <div class="descrip">
-    <h3>Dirección:</h3>
-    <p>Calle 50 nro 722</p>
-    <br>
-    <h3>Barrio:</h3>
-    <p>Centro</p>
-    <br>
-    <h3>Descripcion:</h3>
-    <p>Lorem ipsum dolor sit amet, cons Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehen</p>
-  </div>
-</article>
-<article class="rectangle-6">
-  <h2 class="cardh2">GPS-Taller</h2>
-  <h2 class="califica">4.6</h2>
-    <img class="rectangle-9" src="img/Taller04.jpg" alt="">
-    <img class="star"src="img/star.png" alt="">
-      <p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-      <button class="verm" id="myBtn">
-        <p class="vema">Ver mas</p>
-      </button>
+      </a>
 
 <!-- The Modal -->
 <div  class="modal">

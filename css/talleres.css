@@ -648,6 +648,24 @@ body{
 	background-color: #FFFFFF;
 	border: 2px solid #3972FC;
 }
+.left{
+	margin-left: 90%;
+	margin-top: -3.4%;
+	width: 2%;
+	position: absolute;
+}
+.volver{
+	height: 22px;
+	width: 100%;
+	color: white;
+	font-family: "Montserrat";
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 22px;
+	margin-left: 93%;
+	margin-top: -3%;
+	position: absolute;
+}
 .img-taller{
 	width: 45%;
 	border-radius: 5px;

@@ -6,6 +6,10 @@
 		<link rel="stylesheet" href="css/talleres.css">
   </head>
   <body>
+    <a class="volver" href="talleres.php">VOLVER</a>
+    <a href="talleres.php">
+      <img class="left" src="img/left-arrow.png" alt="">
+    </a>
     <main class="principal">
       <h2 class="tit-taller">GPS-Taller</h2>
       <img class="img-taller"src="img/Taller04.jpg" alt="">
@@ -24,8 +28,6 @@
         <p class="numwsp">221565221</p>
         <p class="espec">Chapa y pintura</p>
       </article>
-
-
     </main>
   </body>
 </html>

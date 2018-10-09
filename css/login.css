@@ -252,7 +252,33 @@ input{
 	margin:15%;
 	margin-left: 23vw;
 }
+footer{
+  background-color: black;
+	text-align: center;
+  bottom:  0px;
 
+}
+footer a{
+  color: white;
+  display: inline;
+	font-family: 'Montserrat';
+	font-size: 16px;
+	letter-spacing: 1.71px;
+	line-height: 21px;
+	font-weight: 200;
+}
+footer ul{
+text-align:center;
+padding-top: 10px;
+list-style-type: none;
+}
+
+footer li{
+  list-style-type: none;
+   display: inline;
+   padding-right: 5px;
+
+}
 /* ASOCIATE */
 
 .miTaller{
@@ -296,69 +322,58 @@ input{
 }
 @media (min-width: 700px){
 	.imag {
-
-	    margin-left: 33%;
+		margin-left: 33%;
 	}
 	.miTaller {
-	margin-top: 0%;
-	margin-left: 9%;
+		margin-top: 0%;
+		margin-left: 9%;
 	}
 }
 @media (min-width: 1020px){
-	/* image car blue */
 	.imag {
-	    margin-left: 2%;
+	  margin-left: 52%;
 	}
 	.tenesun {
-
-    height: 22px;
+		height: 22px;
 		font-size: 22px;
 		margin-left: 15%;
-
 	}
 	.miTaller {
-	margin-top: 0%;
-	margin-left: 9%;
+		margin-top: 0%;
+		margin-left: 9%;
 	}
 
-	@media (min-width: 1200px){
-		footer {
-    	bottom: -32%;
-    }
-		.singup {
-			margin-top: -2%;
-			margin-left: 12%;
-			z-index: 0;
-			width: 45%;
-		}
-					.login {
-			    z-index: 1;
-			    margin-left: 50%;
-			    margin-top: -43%;
-			    width: 30%;
-    			height: 0%;
-			    height:100%;
-			}
-			/* tenes un taller asociate */
-			.tenesun {
-				margin: 0 auto;
-    		margin-top: 15%;
-			}
-			.logo_texto{
-			display: inline;
-			}
-			/* image car blue */
-			.imag{
-			margin-left: -6%;
-    	margin-top: inherit;
-			margin-bottom: -18%;
-			}
-			.miTaller {
-    	margin-top: 0%;
-    	margin-left: 23%;
-			}
-			.footerp{
-			position: absolute;
-			bottom: 0px;
-			}
+@media (min-width: 1200px){
+	.singup {
+		margin-top: -2%;
+	 	margin-left: 12%;
+		z-index: 0;
+		width: 45%;
+	}
+	.login {
+		z-index: 1;
+		margin-left: 50%;
+		margin-top: -43%;
+		width: 40%;
+		height: 400px;
+	}
+	.tenesun {
+		margin: 0 auto;
+    margin-top: 20%;
+	}
+	.logo_texto{
+		display: inline;
+	}
+	.imag{
+		margin-left: -6%;
+		margin-bottom: -23%;
+	}
+	.miTaller {
+  	margin-top: -11%;
+    margin-left: 23%;
+	}
+	.footerp{
+		position: absolute;
+		bottom: 0px;
+	}
 }

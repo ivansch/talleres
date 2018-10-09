@@ -11,41 +11,41 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+    content: '';
+    content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 body{
-	background-image: url(../img/fondo-index.jpg);
-	background-size: 100% ;
+    background-image: url(../img/fondo-index.jpg);
+    background-size: 100% ;
 
-	background-repeat: no-repeat;
+    background-repeat: no-repeat;
 }
 
 .tit{
@@ -74,16 +74,16 @@ body{
     text-align: center;
 }
 .imag{
-	height: 61.55px;
-	text-align: left;
-	position: absolute;
-	margin-top: 13%;
-	margin-left: 29%;
-	color: white;
+    height: 61.55px;
+    text-align: left;
+    position: absolute;
+    margin-top: 13%;
+    margin-left: 29%;
+    color: white;
 }
 .tenesun{
     position: absolute;
-  	color: white;
+    color: white;
     font-family: "Montserrat";
     font-size: 18px;
     font-weight: bold;
@@ -102,18 +102,18 @@ body{
     border-radius: 80px;
 }
 .textoUno{
-  margin: 0 auto;
-  margin-top: 40%;
-  text-align: center;
+    margin: 0 auto;
+    margin-top: 40%;
+    text-align: center;
 }
 .aca{
-	height: 22px;
-	width: 301px;
-	color: #E5E5E5;
-	font-family: "Montserrat";
-	font-size: 18px;
-	font-weight: bold;
-	letter-spacing: 0.39px;
-	line-height: 22px;
-	text-align: center;
+    height: 22px;
+    width: 301px;
+    color: #E5E5E5;
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.39px;
+    line-height: 22px;
+    text-align: center;
 }

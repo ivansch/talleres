@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<?php require_once('head.php') ?>
-		<title>Preguntas frecuentes</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,500,700,800" rel="stylesheet">
 		<link rel="stylesheet" href="css/faqs.css">
+		<title>Preguntas frecuentes</title>
 	</head>
 	<body>
 		<header>

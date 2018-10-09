@@ -1,41 +1,45 @@
-<!-- <?php
+<?php
     require_once("loader.php");
 
 
     //Permanencia de datos//
 
-
     $name = '';
     $email = '';
     $mail = '';
+
     $errores = [];
 
     if($_POST){
-    if (isset($_POST['reg'])) {
-        $name = $_POST['name'];
-        $email = $_POST['email'];
-    }
-    if (isset($_POST['log'])) {
-        $mail = $_POST['mail'];
-     }
-    }
+        if (isset($_POST['reg'])) {
+            $name = $_POST['name'];
+            $email = $_POST['email'];
+        }
+        if (isset($_POST['log'])) {
+            $mail = $_POST['mail'];
+        }
+}
+
 
 //    Valido la informacion que viene por POST//
 
 
     if ($_POST) {
         if (isset($_POST['reg'])) {
-            $errores = validarRegistroYLogin($_POST);
+            $errores = Validator::validarRegistroYLogin($_POST, $db);
         if (empty($errores)) {
-            $usuario = guardarUsuario($_POST);
-            loguear($usuario);
+            $usuario = new Usuario( $_POST['name'], $_POST['email'], $_POST['pass']);
+            $db->guardarUsuario($usuario);
+            $auth->login($_POST["email"]);
+            header('location: pagina1.php');
+            exit;
         }
     }
         if (isset($_POST['log'])) {
-            $errores = validarRegistroYLogin($_POST);
+            $errores =Validator::validarRegistroYLogin($_POST, $db);
             if (empty($errores)) {
-                $usuario = existeEmail($mail);
-                loguear($usuario);
+                $usuario =$db->buscamePorEmail($email);
+                $auth->login($usuario);
                 if (isset($_POST["recordar"])) {
                 setcookie('id', $usuario['id'], time() + 3600 * 24 * 30);
               }
@@ -45,18 +49,17 @@
             }
     }
     }
-?> -->
+?>
     <!DOCTYPE html>
     <html>
         <head>
-            <?php require_once('head.php'); ?>
+            <?php require_once ('head.php');?>
             <link rel="stylesheet" href="css/login.css">
-            <title>Logeo</title>
         </head>
         <body>
         <div class="container contenedor">
             <section class="">
-              <article class="singup col-10 col-sm-10 col-md-10 col-lg-10 col-xl-5" >
+              <article class="singup col-10 col-sm-10 col-md-10 col-lg-10 col-xl-6" >
                 <p class="sosnuevo">¿Sos nuevo?</p>
                 <form method="post" action="" enctype="multipart/form-data">
                   <div class="form-group">
@@ -85,7 +88,7 @@
             </article>
         </section>
             <section class="">
-            <article class="login col-10 col-sm-10 col-md-10 col-lg-10 col-xl-5">
+            <article class="login col-10 col-sm-10 col-md-10 col-lg-10 col-xl-6">
             <p class="text2">Inicia sesión</p>
               <form method="post">
               <div class="form-group">
@@ -96,8 +99,8 @@
               </div>
               <div class="form-group">
                 <label class="parrblack">Contraseña</label>
-                <input type="password" name="cont" ><p class="text-danger">
-                    <?= isset($errores['cont']) ? $errores['cont'] : '' ; ?> </p>
+                <input type="password" name="password" ><p class="text-danger">
+                    <?= isset($errores['password']) ? $errores['password'] : '' ; ?> </p>
               </div>
                             <div class="form-group">
                                 Recordar
@@ -114,6 +117,10 @@
               <p class="tenesun">Tenes un taller? Asociate <a href="asociate.php">aca</a></p>
             </div>
     </div>
+        <footer>
+           <?php require_once ('footer.php');?>
+        </footer>
         </body>
-        <?php require_once('footer.php'); ?>
     </html>
+
+

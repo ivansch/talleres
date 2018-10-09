@@ -1,15 +1,8 @@
-<?php
-require_once('footer.php');
- ?>
-<!DOCTYPE HTML>
-
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <?php require_once ('head.php'); ?>
     <link rel="stylesheet" href="css/pagina1.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,500,700,800" rel="stylesheet">
     <title> TALLERES </title>
   </head>
   <body>
@@ -85,6 +78,8 @@ require_once('footer.php');
               <a href="#" class="badge badge-pill badge-primary botones_home_dos" > <p class="sos">S.O.S</p></a>
             </article>
           </div>
-    
+    <footer>
+        <?php require_once ('footer.php');?>
+    </footer>
   </body>
 </html>

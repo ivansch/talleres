@@ -8,7 +8,6 @@
 
         public function __construct()
         {
-            session_start();
             //Esta clase maneja la sesion, cuando la instanciemos si o si hacemos session_start() para aprovechar las funcionalidades que nos da.
             if (!isset($_SESSION["estoyLogueado"]) && isset($_COOKIE["estoyLogueado"])) {
             //SI NO ESTA SETEADO $_SESSION["estoyLogueado"] Y (PERO) SI esta seteado $_COOKIE["estoyLogueado"]
@@ -22,6 +21,8 @@
         //ir a login.php para terminar de explicar la funcionalidad de este metodo
         {
             $_SESSION["estoyLogueado"] = $email;
+
+
         }
 
         public function loginControl()

@@ -1,6 +1,5 @@
 <?php
 require_once('funciones.php');
-require_once('footer.php');
 
 
 if ($_POST) {
@@ -16,19 +15,15 @@ if ($_POST) {
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Asociate</title>
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,500,700,800" rel="stylesheet">
+		<?php require_once ('head.php'); ?>
 		<link rel="stylesheet" href="css/login.css">
+		<title>Asociate</title>
 	</head>
 	<body>
 	<div class="container contenedor">
 		<section class="">
 		  <article class="miTaller col-10 col-sm-10 col-md-10 col-lg-10 col-xl-6" >
-		    <p class="sosnuevo">Mi Local</p>
+		    <p class="sosnuevo">Mi Taller</p>
 		    <form method="post" enctype="multipart/form-data">
 		      <div class="form-group">
 					<label class="parrwhite">Nombre</label>
@@ -45,16 +40,6 @@ if ($_POST) {
       				<option class="parrblack">Gonnet</option>
     					</select>
   			</div>
-				<div class="form-group">
-					<label class="parrwhite"for="exampleFormControlSelect1">Negocio</label>
-						<select class="form-control input2" id="exampleFormControlSelect1">
-						<option class="parrblack">Taller</option>
-						<option class="parrblack">Gomeria</option>
-						<option class="parrblack">Lubricentro</option>
-						<option class="parrblack">Autoradio</option>
-						
-						</select>
-			</div>
 		    <div class="form-group">
 		      <label class="parrwhite">Dirección</label>
 					<input class="input2"type="text" name="direccionTaller" value="">	 <p class="text-warning">
@@ -78,6 +63,8 @@ if ($_POST) {
 		</article>
 	</section>
 </div>
-
-	</body>
+</body>
+<footer>
+	<?php require_once('footer.php');?>
+</footer>
 </html>

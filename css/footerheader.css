@@ -1,0 +1,187 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+footer{
+    background-color: black;
+    text-align: center;
+    height: 75px;
+    bottom:-30%;
+    width: 100%;
+    position: absolute;
+}
+footer a{
+    color: white;
+    display: inline;
+    font-family: 'Montserrat';
+    font-size: 11px;
+    letter-spacing: 1.71px;
+    line-height: 21px;
+    font-weight: 200;
+}
+footer ul{
+    text-align:center;
+    padding-top: 10px;
+    list-style-type: none;
+}
+footer li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 5px;
+}
+/* clases del header */
+.usuario {
+	width: 100%;
+	margin-left: -12%;
+	margin-top: 2.5%;
+	position: absolute;
+	display: inline-block;
+	color: #FFFFFF;
+	font-family: "Montserrat";
+	font-size: 18px;
+	line-height: 28px;
+	text-align: right;
+}
+.imguser{
+	margin-left: 89%;
+	margin-top: 2%;
+	height: 33px;
+	width: 33px;
+}
+/* clases del footer */
+.contacto{
+    margin-left: 33%;
+    margin-top: 4%;
+    box-sizing: border-box;
+    height: 27px;
+    width: 167px;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+}
+.logoinsta{
+    height: 26.81px;
+    width: 26.81px;
+    margin-left:-70%;
+    margin-top: 10%;
+    position: absolute
+}
+.logoface{
+    height: 26.81px;
+    width: 26.81px;
+    margin-left: -80%;
+    margin-top: 10%;
+    position: absolute
+}
+.clearfix::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+@media (min-width: 768px) {
+    body{
+        background-size: 150%;
+    }
+    footer a{
+        font-size: 16px;
+    }
+    .logoinsta{
+        margin-left: 22%;
+        margin-top: 2%;
+    }
+    .logoface{
+        margin-left: 18%;
+        margin-top: 2%;
+
+    }
+    .qs{
+        margin-top: 2%;
+        margin-left: -48%;
+        position: absolute;
+
+    }
+    .pf{
+        position: absolute;
+        margin-left: -25%;
+        margin-top: 2%;
+    }
+}
+@media (min-width: 1024px) {
+    body{
+        background-size: 120%;
+    }
+    .pf{
+        margin-left: -30%;
+    }
+    .contacto{
+        margin-left: 80%;
+        margin-top: 2%;
+    }
+
+}
+@media (min-width: 1360px) {
+    body{
+        background-size: 120%;
+    }
+    .pf{
+        margin-left: -35%;
+    }
+    .contacto{
+        margin-left: 87%;
+    }
+    .logoinsta{
+        margin-left: 34%;
+    }
+    .logoface{
+        margin-left: 31%;
+    }
+
+}
+
+@media (min-width: 1440px) {
+    body{
+        background-size: 120%;
+    }
+    .pf{
+        margin-left: -35%;
+    }
+
+}

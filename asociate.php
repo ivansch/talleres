@@ -23,7 +23,7 @@ if ($_POST) {
 	<div class="container contenedor">
 		<section class="">
 		  <article class="miTaller col-10 col-sm-10 col-md-10 col-lg-10 col-xl-6" >
-		    <p class="sosnuevo">Mi Taller</p>
+		    <p class="sosnuevo">Mi Local</p>
 		    <form method="post" enctype="multipart/form-data">
 		      <div class="form-group">
 					<label class="parrwhite">Nombre</label>
